@@ -1,6 +1,11 @@
 class CartsController < ApplicationController
 
   def show
+    if cart_subtotal_cents != 0
+      render :show
+    else
+      render :empty
+    end
   end
 
   def add_item
