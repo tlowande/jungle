@@ -22,7 +22,7 @@
       </thead>
       <tbody>
         <% @order.line_items.each do |item| %>
-          <%= render 'item', product: item.product, quantity: item[:quantity].to_i %>
+          <%= render 'item', :product => item.product, quantity: item.quantity.to_i %>
         <% end %>
       </tbody>
       <tfoot>
