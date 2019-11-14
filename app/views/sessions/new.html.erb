@@ -1,0 +1,15 @@
+<header class="page-header">
+    <h3>Login</h3>
+</header>
+    <%= form_tag '/sessions' do %>
+        Email: </br>
+        <%= text_field_tag :email %>
+      </br>
+      </br>
+      Password:  </br>
+      <%= password_field_tag :password %>
+      </br>
+      </br>
+      <%= submit_tag "Login", class: "btn btn-info"%>
+      </br>
+    <% end %>

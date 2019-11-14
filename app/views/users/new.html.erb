@@ -1,0 +1,13 @@
+<header class="page-header">
+<h3>Signup!</h3>
+</header>
+<%= form_for :user, url: '/users' do |f| %>
+
+  Name: </br><%= f.text_field :name %></br></br>
+  Email: </br><%= f.text_field :email %></br></br>
+  Password: </br><%= f.password_field :password %></br></br>
+  Password Confirmation: </br><%= f.password_field :password_confirmation %></br></br>
+  <%= f.submit "Submit", class: "btn btn-info"%>
+  </br>
+
+<% end %>
