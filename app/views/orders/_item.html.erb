@@ -8,11 +8,11 @@
     <p><%= product.description %></p>
   </td>
   <td>
-    <%= humanized_money_with_symbol product.price %>
+    <%= product.price.format(:no_cents_if_whole => false, :symbol => true) %>
   </td>
   <td>
     <%= quantity %>
   <td>
-    <%=humanized_money_with_symbol product.price * quantity %>
+    <%=humanized_money_with_symbol product.price* quantity %>
   </td>
 </tr>

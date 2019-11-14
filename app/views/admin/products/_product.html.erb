@@ -11,7 +11,7 @@
     <%= product.category.name %>
   </td>
   <td>
-    <%= humanized_money_with_symbol product.price %>
+    <%=  product.price.format(:no_cents_if_whole => false, :symbol => true) %>
   </td>
   <td>
     <%= product.quantity %>
