@@ -21,7 +21,7 @@
           <dt>Quantity</dt>
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
-          <dd><%= product.price.format(:no_cents_if_whole => false, :symbol => true) %></dd>
+          <dd><%= @product.price.format(:no_cents_if_whole => false, :symbol => true) %></dd>
         </dl>
       </div>
     </div>
